@@ -1,0 +1,168 @@
+/* =====================
+Common
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Noto Sans JP",sans-serif;
+    color:#333;
+    background:#fff;
+    line-height:1.8;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+section{
+    padding:120px 0;
+}
+
+.inner{
+    width:1200px;
+    margin:auto;
+}
+
+
+/* =====================
+Header
+===================== */
+
+header{
+    width:100%;
+    height:90px;
+    background:#d9f4ff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.header-inner{
+    width:1200px;
+    height:100%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    height:55px;
+}
+
+.gnav{
+    display:flex;
+    gap:48px;
+}
+
+.gnav a{
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.08em;
+    transition:.3s;
+}
+
+.gnav a:hover{
+    color:#2563eb;
+}
+
+
+/* Button */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 80px;
+    background: #ff7438;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.35);
+    transition: 0.3s;
+}
+
+.btn:active {
+    transform: translateY(3px);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Arrow */
+/* 青い矢印見出し */
+.arrow-title {
+    width: 640px;
+    height: 110px;
+    background: #3367d6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.25);
+}
+
+.arrow-title span {
+    font-size: 34px;
+    letter-spacing: 0.14em;
+}
+
+/* =====================
+Footer
+===================== */
+
+footer{
+    background:#0F172A;
+    color:#fff;
+    padding:70px 0 30px;
+}
+
+.footer-inner{
+    width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-left img{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.footer-left p{
+    line-height:2;
+    color:#d6d6d6;
+}
+
+.footer-right{
+    text-align:right;
+    line-height:2;
+    color:#d6d6d6;
+}
+
+.copyright{
+    margin-top:50px;
+    text-align:center;
+    font-size:14px;
+    color:#9ca3af;
+}

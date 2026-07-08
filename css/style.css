@@ -1,0 +1,609 @@
+/* =====================
+Common
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Noto Sans JP",sans-serif;
+    color:#333;
+    background:#fff;
+    line-height:1.8;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+section{
+    padding:120px 0;
+}
+
+.inner{
+    width:1200px;
+    margin:auto;
+}
+
+
+
+/* =====================
+Header
+===================== */
+
+header{
+    width:100%;
+    height:90px;
+    background:#d9f4ff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.header-inner{
+    width:1200px;
+    height:100%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    height:55px;
+}
+
+.gnav{
+    display:flex;
+    gap:48px;
+}
+
+.gnav a{
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.08em;
+    transition:.3s;
+}
+
+.gnav a:hover{
+    color:#2563eb;
+}
+
+/* =================================
+Hero
+================================= */
+/* Hero */
+.hero {
+  height: 720px;
+  background-image: url("../images/top/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-copy {
+  position: absolute;
+  left: 0;
+  bottom: 120px;
+
+  width: 78%;
+  height: 120px;
+
+  background: rgba(37, 99, 235, 0.65);
+
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+
+  clip-path: polygon(0 0, 94% 0, 100% 50%, 94% 100%, 0 100%);
+}
+
+.hero-copy h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+}
+
+/* =========================
+   Problem
+========================= */
+
+.problem {
+  background: #f4f9fc;
+  padding: 100px 0 120px;
+}
+
+.problem-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.problem-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.problem-img {
+  width: 280px;
+}
+
+.problem-img img {
+  width: 100%;
+  display: block;
+}
+
+.problem-text {
+  padding-top: 20px;
+}
+
+.section-title {
+  color: #2563eb;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 50px;
+}
+
+.problem-list {
+  color: #3f6eaa;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0.12em;
+}
+
+.problem-list li {
+  position: relative;
+  padding-left: 42px;
+}
+
+.problem-list li::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 3px solid #3f6eaa;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.problem-copy {
+  margin-top: 120px;
+  text-align: center;
+  color: #0f2f75;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.12em;
+}
+
+.problem-copy span {
+  font-size: 36px;
+}
+
+.problem-btns {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 380px;
+  height: 80px;
+
+  background: #ff7438;
+  color: #fff;
+
+  border-radius: 999px;
+
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.35);
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(3px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   Trust
+========================= */
+
+.trust {
+  background: #f4f9fc;
+  padding: 80px 0 110px;
+}
+
+/* 青い矢印見出し */
+.arrow-title {
+  width: 640px;
+  height: 110px;
+
+  background: #3367d6;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+
+  clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+  box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.25);
+}
+
+.arrow-title span {
+  font-size: 34px;
+  letter-spacing: 0.14em;
+}
+
+/* 実績3つ */
+.trust-inner {
+  width: 1080px;
+  margin: 90px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.trust-item {
+  text-align: center;
+}
+
+.trust-item-center {
+  margin-top: -60px;
+}
+
+.trust-circle {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+
+  background: #20aef2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-circle p {
+  color: #fff;
+  line-height: 1;
+}
+
+.trust-circle strong {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.trust-circle span {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.trust-item h3 {
+  margin-top: 28px;
+
+  color: #3f6eaa;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+/* =========================
+   Top Service
+========================= */
+
+.top-service {
+  background: #f4f9fc;
+  padding: 80px 0 120px;
+}
+
+.top-service-inner {
+  width: 1120px;
+  margin: 120px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-service-item {
+  width: 300px;
+  text-align: center;
+}
+
+.top-service-item img {
+  width: 300px;
+  height: 210px;
+  object-fit: contain;
+  margin: 0 auto 40px;
+}
+
+.top-service-item h3 {
+  color: #111;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+/* 中央だけ青文字にする場合 */
+.top-service-item:nth-child(2) h3 {
+  color: #0f2f75;
+}
+
+/* =========================
+   Reason
+========================= */
+
+.reason {
+  background: #f4f9fc;
+  padding: 80px 0 120px;
+}
+
+.reason-title {
+  width: 1050px;
+}
+
+.reason-inner {
+  width: 1160px;
+  margin: 90px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.reason-item {
+  width: 31%;
+  padding: 0 42px;
+  text-align: left;
+}
+
+.reason-item:not(:last-child) {
+  border-right: 1px solid #7da3d8;
+}
+
+.reason-item h3 {
+  width: 280px;
+  height: 48px;
+
+  margin: 0 auto 45px;
+
+  background: #e8d600;
+  color: #0f2f75;
+
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.reason-item p {
+  color: #444;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.12em;
+}
+
+/* =========================
+   Top Case Study
+========================= */
+
+.top-case {
+  background: #f4f9fc;
+  padding: 80px 0 0;
+  position: relative;
+}
+
+.case-title {
+  width: 640px;
+}
+
+.case-inner {
+  width: 1100px;
+  margin: 70px auto 0;
+}
+
+.case-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.case-text {
+  width: 48%;
+}
+
+.case-text h3 {
+  width: 340px;
+  min-height: 90px;
+  padding: 18px 45px;
+
+  background: linear-gradient(90deg, #20d5a0, #61d96c);
+  color: #fff;
+
+  border-radius: 0 999px 999px 0;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+}
+
+.case-text p {
+  margin-top: 45px;
+
+  color: #111;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.75;
+  letter-spacing: 0.12em;
+}
+
+.case-img {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.case-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 建設会社 */
+.case-item-construction .case-text h3 {
+  border-radius: 0 999px 999px 0;
+}
+
+/* 飲食店 */
+.case-item-cafe {
+  margin-top: 40px;
+}
+
+.case-item-cafe .case-text {
+  width: 48%;
+}
+
+.case-item-cafe .case-text h3 {
+  margin-left: auto;
+  border-radius: 999px 0 0 999px;
+}
+
+.case-item-cafe .case-text p {
+  margin-left: 40px;
+}
+
+/* 左側の水色背景 */
+.case-item-cafe {
+  position: relative;
+}
+
+.case-item-cafe::before {
+  content: "";
+  position: absolute;
+  left: -120px;
+  top: -100px;
+
+  width: 360px;
+  height: 300px;
+
+  background: #aee3ff;
+  border-radius: 45% 55% 50% 50% / 45% 40% 60% 55%;
+
+  z-index: 0;
+}
+
+.case-item-cafe .case-img,
+.case-item-cafe .case-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA */
+.case-cta {
+  text-align: center;
+  padding: 90px 0 100px;
+}
+
+.case-cta p {
+  margin-bottom: 45px;
+
+  color: #111;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.case-cta .btn {
+  width: 280px;
+  height: 62px;
+
+  font-size: 18px;
+}
+
+/* =====================
+Footer
+===================== */
+
+footer{
+    background:#0F172A;
+    color:#fff;
+    padding:70px 0 30px;
+}
+
+.footer-inner{
+    width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-left img{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.footer-left p{
+    line-height:2;
+    color:#d6d6d6;
+}
+
+.footer-right{
+    text-align:right;
+    line-height:2;
+    color:#d6d6d6;
+}
+
+.copyright{
+    margin-top:50px;
+    text-align:center;
+    font-size:14px;
+    color:#9ca3af;
+}

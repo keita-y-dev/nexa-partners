@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h2 {
+    color: #fff;
+}
+
+.caseHero-1 {
+    height: 720px;
+    background-image: url(../images/case/construction.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.caseHero-2 {
+    height: 720px;
+    background-image: url(../images/case/cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}

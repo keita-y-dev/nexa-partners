@@ -1,0 +1,40 @@
+.service-top{
+    margin-top: 120px;
+    text-align: center;
+    color: #0f2f75;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+    font-size: 36px;
+}
+
+
+.service img{
+    max-width: 35%;
+    display: flex;
+}
+
+.web,.dx,.subsidy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.halfround-title{
+    width: 640px;
+    height: 110px;
+    padding: 20px 60px;
+    background: #3367d6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    border-radius: 9999px;
+    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.25);
+}
