@@ -32,58 +32,62 @@
     </header>
 
     <main>
-        <h1>お問い合わせ</h1>
-        <hr>
-        <p>まずはお気軽にご相談ください。</p>
-        <p>業務改善やDX導入について、専門スタッフがご相談を承ります。</p>
-        <div class="eyecatch">
-            <div class="stat-card">
-                <p>累計支援実績<br>300社以上</p>
+        <section class="contact-top">
+            <h1>お問い合わせ</h1>
+            <hr>
+            <p>まずはお気軽にご相談ください。</p>
+            <p>業務改善やDX導入について、専門スタッフがご相談を承ります。</p>
+        </section>
+        <section class="contact-content">
+            <div class="stat-container">
+                <div class="stat-card">
+                    <p>累計支援実績<br>300社以上</p>
+                </div>
+                <div class="stat-card">
+                    <p>相談実績<br>8年間</p>
+                </div>
+                <div class="stat-card">
+                    <p>初回<br>相談無料</p>
+                </div>
+                <div class="stat-card">
+                    オンライン<br>対応可
+                </div>
             </div>
-            <div class="stat-card">
-                <p>相談実績<br>8年間</p>
+            <div class="contact-form">
+                <form action="submit">
+                    <p>会社名<br>
+                        <input type="text" name="company" required>
+                    </p>
+                    <p>担当者名<br>
+                        <input type="text" name="username" required>
+                    </p>
+                    <p>メールアドレス<br>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>電話番号<br>
+                        <input type="text" name="tel" required>
+                    </p>
+                    <p>相談したい内容<br>
+                        <label>
+                            <input type="checkbox" name="category" value="web"[]>Webサイト制作
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="category" value="dx"[]>業務効率化
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="category" value="subsidy"[]>補助金サポート
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="category" value="web"[]>その他
+                        </label>
+                    </p>
+                    <p>ご相談内容<br>
+                        <textarea name="content" rows="5" cols="40" required></textarea>
+                    </p>
+                    <input type="submit" value="送信">
+                </form>
             </div>
-            <div class="stat-card">
-                <p>初回<br>相談無料</p>
-            </div>
-            <div class="stat-card">
-                オンライン<br>対応可
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="submit">
-                <p>会社名<br>
-                    <input type="text" name="company" required>
-                </p>
-                <p>担当者名<br>
-                    <input type="text" name="username" required>
-                </p>
-                <p>メールアドレス<br>
-                    <input type="email" name="email" required>
-                </p>
-                <p>電話番号<br>
-                    <input type="text" name="tel" required>
-                </p>
-                <p>相談したい内容<br>
-                    <label>
-                        <input type="checkbox" name="category" value="web"[]>Webサイト制作
-                    </label>
-                    <label>
-                        <input type="checkbox" name="category" value="dx"[]>業務効率化
-                    </label>
-                    <label>
-                        <input type="checkbox" name="category" value="subsidy"[]>補助金サポート
-                    </label>
-                    <label>
-                        <input type="checkbox" name="category" value="web"[]>その他
-                    </label>
-                </p>
-                <p>ご相談内容<br>
-                    <textarea name="content" rows="5" cols="40" required></textarea>
-                </p>
-                <input type="submit" value="送信">
-            </form>
-        </div>
+        </section>
     </main>
 
     <footer>

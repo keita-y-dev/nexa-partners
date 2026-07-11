@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* =========================
+   CONTACTページ
+========================= */
+
+.contact-top {
+    margin-top: 120px;
+    text-align: center;
+    color: #0f2f75;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+    font-size: 36px;
+}
+
+.contact-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 720px;
+}
+
+.stat-container,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    display: flex;
+    flex-basis: 42%;
+    background-color: #0f2f75;
+    border-radius: 50%;
+}
+
+.stat-card {
+    color: #fff;
+    text-align: center;
+}
+
+.contact-form p {
+    display: flex;
+}
+
+.contact-form {
+    justify-content: flex-start;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="textarea"] {
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 8px;
+}
