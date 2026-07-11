@@ -50,40 +50,72 @@
                     <p>初回<br>相談無料</p>
                 </div>
                 <div class="stat-card">
-                    オンライン<br>対応可
+                    <p>オンライン<br>対応可</p>
                 </div>
             </div>
             <div class="contact-form">
                 <form action="submit">
-                    <p>会社名<br>
-                        <input type="text" name="company" required>
-                    </p>
-                    <p>担当者名<br>
-                        <input type="text" name="username" required>
-                    </p>
-                    <p>メールアドレス<br>
-                        <input type="email" name="email" required>
-                    </p>
-                    <p>電話番号<br>
-                        <input type="text" name="tel" required>
-                    </p>
-                    <p>相談したい内容<br>
-                        <label>
-                            <input type="checkbox" name="category" value="web"[]>Webサイト制作
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="category" value="dx"[]>業務効率化
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="category" value="subsidy"[]>補助金サポート
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="category" value="web"[]>その他
-                        </label>
-                    </p>
-                    <p>ご相談内容<br>
-                        <textarea name="content" rows="5" cols="40" required></textarea>
-                    </p>
+                    <div class="form-item">
+                        <p>
+                            <label for="company">
+                                会社名
+                            </label>
+                            <input id="company" type="text" name="company" required>
+                        </p>
+                    </div>
+                    <div class="form-item">
+                        <p>
+                            <label for="contact-person">
+                                担当者名
+                            </label> 
+                            <input id="contact-person" type="text" name="username" required>
+                        </p>
+                    </div>
+                    <div class="form-item">
+                        <p>
+                            <label for="email">
+                                メールアドレス
+                            </label>
+                            <input id="email" type="email" name="email" required>
+                        </p>
+                    </div>
+                    <div class="form-item">
+                        <p>
+                            <label for="tel">
+                                電話番号
+                            </label>
+                            <input id="tel" type="tel" name="tel" required>
+                        </p>
+                    </div>
+                    <div class="form-item">
+                        <fieldset>
+                            <legend>
+                                相談したい内容
+                            </legend>
+                            <div class="checkbox-list">
+                                <label>
+                                    <input type="checkbox" name="category" value="web">Webサイト制作
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="category" value="dx">業務効率化
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="category" value="subsidy">補助金サポート
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="category" value="other">その他
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-item">
+                        <p>
+                            <label for="content">
+                                ご相談内容
+                            </label>
+                            <textarea id="content" name="content" rows="5" cols="40" required></textarea>
+                        </p>
+                    </div>
                     <input type="submit" value="送信">
                 </form>
             </div>

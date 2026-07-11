@@ -4,58 +4,226 @@
    CONTACTページ
 ========================= */
 
-.contact-top {
-    margin-top: 120px;
-    text-align: center;
-    color: #0f2f75;
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 1.6;
-    letter-spacing: 0.12em;
-    font-size: 36px;
+main {
+    background-color: #f4f9fc;
 }
+
+/* =========================
+   ページ上部
+========================= */
+
+.contact-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 80px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-top h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.contact-top hr {
+    width: 420px;
+    margin: 42px auto 60px;
+    border: 0;
+    border-top: 2px solid #333;
+}
+
+.contact-top p {
+    font-size: 22px;
+    line-height: 1.9;
+    letter-spacing: 0.12em;
+}
+
+.contact-top p + p {
+    margin-top: 28px;
+}
+
+/* =========================
+   実績・フォーム
+========================= */
 
 .contact-content {
-    display: flex;
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 140px;
+
+    display: grid;
+    grid-template-columns: 460px 520px;
     justify-content: center;
-    height: 720px;
+    align-items: start;
+    gap: 110px;
 }
 
-.stat-container,
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    flex-wrap: wrap;
+/* =========================
+   実績
+========================= */
+
+.stat-container {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 36px;
+    justify-content: center;
 }
 
 .stat-card {
-    display: flex;
-    flex-basis: 42%;
-    background-color: #0f2f75;
+    width: 180px;
+    aspect-ratio: 1;
     border-radius: 50%;
-}
-
-.stat-card {
+    background-color: #0f2f75;
     color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
 }
 
-.contact-form p {
-    display: flex;
+.stat-card p {
+    margin: 0;
 }
+
+/* =========================
+   フォーム
+========================= */
 
 .contact-form {
-    justify-content: flex-start;
+    width: 100%;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-item > label,
+.form-item > p,
+.contact-form legend {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-align: left;
+}
+
+/* 入力欄 */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+
+    border: 1px solid #333;
+    background-color: #fff;
+
+    color: #333;
+    font-family: inherit;
+    font-size: 16px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="textarea"] {
-    border: 1px solid #000;
-    background-color: #fff;
-    width: 100%;
-    margin-top: 5px;
-    padding: 4px 8px;
+input[type="tel"] {
+    height: 44px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* 入力時 */
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #3367d6;
+    outline-offset: 2px;
+}
+
+/* =========================
+   チェックボックス
+========================= */
+
+.contact-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
+
+.contact-form legend {
+    margin-bottom: 10px;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 48px;
+}
+
+.checkbox-list label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 17px;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #3367d6;
+}
+
+/* =========================
+   送信ボタン
+========================= */
+
+input[type="submit"] {
+    display: block;
+    min-width: 110px;
+    height: 46px;
+    margin: 30px 0 0 auto;
+    padding: 0 28px;
+
+    border: 0;
+    border-radius: 999px;
+    background-color: #3367d6;
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0f2f75;
+    transform: translateY(-2px);
 }
