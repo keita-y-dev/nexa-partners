@@ -1,19 +1,101 @@
-.about-hero{
+@charset "utf-8";
 
+/* =========================
+   ABOUTページ
+========================= */
+
+/* 補助線 */
+.innerWrap {
+    border: 4px solid aqua;
 }
+
+
+/* Hero */
+
+.about-hero{
+    background-image: url(../images/about/about-hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-hero h1{
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* mission */
 
 .mission{
-
+    background-image: url(../images/about/mission.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #ff6;
+    text-align: center;
 }
 
-.value{
+/* value */
 
+.value-top{
+    font-size: 66px;
+    text-align: center;
+    padding-left: 400px;
 }
 
-.company{
-
+.value-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+.value-item img{
+    width: 420px;
+    height: auto;
+}
+
+.partner figcaption{
+    color: blue;
+}
+
+.simple figcaption{
+    color: #ff6;
+}
+
+.support figcaption{
+    color: palevioletred;
+}
+
+/* message */
 
 .message{
 
+}
+
+/* company */
+
+.company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-top{
+    text-align: center;
+}
+
+.company-info {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 5px 16px;
+}
+
+.company-info dt,
+.company-info dd {
+    margin: 0;
+}
+
+.company-info ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
 }
