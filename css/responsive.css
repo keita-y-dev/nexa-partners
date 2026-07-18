@@ -1,3 +1,14 @@
-@media screen and (max-width:768px){
+/* タブレット */
+@media (max-width: 1024px) {
+
+}
+
+/* スマートフォン */
+@media (max-width: 768px) {
+
+}
+
+/* 小さいスマートフォン */
+@media (max-width: 480px) {
 
 }
