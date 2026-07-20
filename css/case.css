@@ -1,96 +1,222 @@
 @charset "UTF-8";
 
 /* =========================
-   Case
+   CASE STUDYページ
 ========================= */
 
 .case {
-    width: 1200px;
-    margin: 120px auto;
+    width: 100%;
+    margin: 0;
+    color: #222;
 }
 
+/* =========================
+   ページタイトル
+========================= */
+
 .case-top {
-    text-align: center;
-    margin-bottom: 100px;
+    min-height: 120px;
+    margin-bottom: 0;
+    padding: 24px max(48px, calc((100% - 1200px) / 2));
+
+    background: linear-gradient(
+        90deg,
+        #1688a5 0%,
+        #5eb4d2 55%,
+        #a9e4f5 100%
+    );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #fff;
 }
 
 .case-top h1 {
-    color: #0f2f75;
-    font-size: 52px;
+    color: #fff;
+    font-size: 48px;
     font-weight: 700;
-    letter-spacing: .12em;
+    line-height: 0.95;
+    letter-spacing: 0.16em;
 }
 
 .case-top p:first-of-type {
-    margin: 20px 0 40px;
-    color: #3367d6;
-    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
 }
 
-.case-top p:last-of-type {
-    font-size: 20px;
-    line-height: 2;
+/* =========================
+   各事例
+========================= */
+
+.case-1,
+.case-2 {
+    margin: 0;
+    padding: 0;
 }
+
+/* =========================
+   事例画像
+========================= */
 
 .caseHero-1,
 .caseHero-2 {
-    height: 420px;
+    position: relative;
+
+    width: 100%;
+    height: clamp(420px,45vw,620px);
+    margin: 0;
+
     background-size: cover;
     background-position: center;
-    border-radius: 30px;
+
+    border-radius: 0;
+
     display: flex;
-    align-items: end;
-    margin-bottom: 60px;
 }
 
 .caseHero-1 {
-    background-image: url("../images/case/construction.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0.18)
+        ),
+        url("../images/case/construction.jpg");
+
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .caseHero-2 {
-    background-image: url("../images/case/cafe.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0.18)
+        ),
+        url("../images/case/cafe.jpg");
+
+    justify-content: flex-start;
+    align-items: flex-end;
 }
+
+/* 写真上の会社名 */
 
 .caseHero-1 h2,
 .caseHero-2 h2 {
-    width: 420px;
-    padding: 25px 40px;
-    background: rgba(15,47,117,.8);
+    width: auto;
+    min-width: 340px;
+    margin: 0;
+
+    padding: 22px 48px;
+
+    background: transparent;
+
     color: #fff;
-    font-size: 34px;
-    line-height: 1.5;
-    border-radius: 0 30px 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0.18em;
+
+    border-radius: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
 }
 
-.case-item{
-    display:flex;
-    align-items:center;
-    padding:50px 0;
-    border-bottom:1px dotted #999;
+.caseHero-1 h2 {
+    margin: 20px 8% 0 0;
+    text-align: center;
 }
 
-.case-item:last-child{
-    border-bottom:none;
+.caseHero-2 h2 {
+    margin: 0 0 18px 8%;
+    text-align: left;
 }
 
-.case-item img{
-    width:50px;
-    margin-right:40px;
+/* =========================
+   課題・導入・効果
+========================= */
+
+.case-content {
+    width: min(1000px, calc(100% - 48px));
+    margin-inline: auto;
+    padding: 30px 0;
 }
 
-.case-item h3{
-    width:120px;
-    font-size:48px;
-    color:#0f2f75;
-    margin-right:60px;
+.case-item {
+    min-height: 110px;
+    padding: 24px 20px;
+
+    display: grid;
+    grid-template-columns: 64px 130px 1fr;
+    align-items: center;
+    column-gap: 28px;
+
+    border-bottom: 1px dotted #aaa;
 }
 
-.case-item p{
-    font-size:32px;
-    line-height:1.6;
-    letter-spacing:.05em;
+.case-item:last-child {
+    border-bottom: none;
 }
 
-.case-1{
-    margin-bottom:160px;
+/* 見出し */
+
+.case-item h3 {
+    width: auto;
+    margin: 0;
+
+    display: contents;
+
+    color: #0f2f75;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+/* アイコン */
+
+.case-item h3 img {
+    grid-column: 1;
+
+    width: 48px;
+    height: 48px;
+    margin: 0;
+
+    object-fit: contain;
+}
+
+/* 「課題」「導入」「効果」 */
+
+.case-item h3 {
+    grid-column: 2;
+}
+
+/*
+display: contentsにより、h3内の文字は
+Gridの2列目に配置されます。
+*/
+
+/* 本文 */
+
+.case-item p {
+    grid-column: 3;
+
+    margin: 0;
+
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+}
+
+/* 事例同士の間隔 */
+
+.case-1 {
+    margin-bottom: 0;
+}
+
+.case-2 {
+    padding-bottom: 80px;
 }
