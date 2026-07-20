@@ -156,6 +156,59 @@
     .service-content li {
         padding: 10px 20px;
     }
+
+    /* =========================
+    CASEページ
+    ========================= */
+
+    .case-top{
+        min-height:100px;
+        padding:20px 24px;
+    }
+
+    .case-top h1{
+        font-size:40px;
+    }
+
+    .case-top p:first-of-type{
+        font-size:24px;
+    }
+
+    .caseHero-1,
+    .caseHero-2{
+        height:clamp(340px,42vw,480px);
+    }
+
+    .caseHero-1 h2,
+    .caseHero-2 h2{
+        min-width:280px;
+        padding:18px 32px;
+
+        font-size:26px;
+    }
+
+    .case-content{
+        width:min(900px, calc(100% - 48px));
+    }
+
+    .case-item{
+        grid-template-columns:56px 110px 1fr;
+        column-gap:22px;
+    }
+
+    .case-item h3{
+        font-size:22px;
+    }
+
+    .case-item h3 img{
+        width:42px;
+        height:42px;
+    }
+
+    .case-item p{
+        font-size:18px;
+    }
+
 }
 
 /* =========================
@@ -472,6 +525,78 @@
 
     .case-title{
         width:90%;
+    }
+
+    /* =========================
+    CASEページ
+    ========================= */
+
+    .case-top{
+        min-height:88px;
+        padding:18px 24px;
+
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .case-top h1{
+        font-size:34px;
+    }
+
+    .case-top p:first-of-type{
+        font-size:20px;
+    }
+
+    .caseHero-1,
+    .caseHero-2{
+        height:280px;
+
+        justify-content:center;
+        align-items:flex-end;
+    }
+
+    .caseHero-1 h2,
+    .caseHero-2 h2{
+
+        min-width:auto;
+        width:100%;
+
+        margin:0;
+        padding:18px 24px;
+
+        text-align:center;
+
+        background:rgba(15,47,117,.55);
+
+        font-size:24px;
+    }
+
+    .case-content{
+        width:calc(100% - 48px);
+        padding:18px 0 42px;
+    }
+
+    .case-item{
+
+        min-height:auto;
+        padding:22px 0;
+
+        grid-template-columns:48px 90px 1fr;
+        column-gap:18px;
+    }
+
+    .case-item h3{
+        font-size:20px;
+    }
+
+    .case-item h3 img{
+        width:36px;
+        height:36px;
+    }
+
+    .case-item p{
+        font-size:17px;
+        line-height:1.8;
     }
 }
 
@@ -920,5 +1045,74 @@
         font-size:14px;
         padding:8px 16px;
     }
-    
+
+    /* =========================
+    CASEページ
+    ========================= */
+
+    .case-top{
+
+        padding:16px;
+
+        align-items:flex-start;
+    }
+
+    .case-top h1{
+
+        font-size:28px;
+        line-height:1.1;
+    }
+
+    .case-top p:first-of-type{
+
+        font-size:16px;
+    }
+
+    .caseHero-1,
+    .caseHero-2{
+
+        height:220px;
+    }
+
+    .caseHero-1 h2,
+    .caseHero-2 h2{
+
+        padding:14px 18px;
+
+        font-size:20px;
+    }
+
+    .case-content{
+
+        width:calc(100% - 32px);
+    }
+
+    .case-item{
+
+        grid-template-columns:40px 1fr;
+        row-gap:12px;
+
+        padding:18px 0;
+    }
+
+    .case-item h3{
+
+        grid-column:2;
+
+        font-size:18px;
+    }
+
+    .case-item h3 img{
+
+        width:30px;
+        height:30px;
+    }
+
+    .case-item p{
+
+        grid-column:1 / 3;
+
+        font-size:16px;
+        line-height:1.8;
+    }
 }
