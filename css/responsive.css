@@ -1,14 +1,781 @@
-/* タブレット */
+@charset "utf-8";
+
+/* =========================
+   Tablet
+   1024px以下（iPad Air横・小型ノートPC）
+========================= */
+
 @media (max-width: 1024px) {
 
+    .inner,
+    .header-inner,
+    .footer-inner {
+        width: min(960px, calc(100% - 48px));
+    }
+
+    /* Header */
+    .logo img {
+        height: 46px;
+        width: auto;
+    }
+
+    .gnav {
+        gap: 24px;
+    }
+
+    .gnav a {
+        font-size: 13px;
+    }
+
+    /* Problem */
+    .problem-top {
+        gap: 60px;
+    }
+
+    .problem-btns {
+        gap: 32px;
+    }
+
+    .problem-btns .btn {
+        width: min(340px, 42vw);
+        font-size: 22px;
+    }
+
+    /* Trust */
+    .trust-circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .trust-circle strong {
+        font-size: 68px;
+    }
+
+    /* Service */
+    .top-service-inner {
+        gap: 24px;
+    }
+
+    .top-service-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .top-service-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Reason */
+    .reason-item {
+        padding-inline: 20px;
+    }
+
+    .reason-item h3 {
+        width: 100%;
+        max-width: 260px;
+        font-size: 20px;
+    }
+
+    .reason-item p {
+        font-size: 18px;
+    }
+
+    /* Case */
+    .case-item {
+        gap: 40px;
+    }
+
+    .case-text {
+        width: min(430px, 52%);
+    }
+
+    .case-text h3,
+    .case-text p,
+    .case-item-cafe .case-text,
+    .case-item-cafe .case-text h3,
+    .case-item-cafe .case-text p {
+        max-width: 100%;
+    }
+
+    .arrow-title {
+        max-width: 80%;
+    }
 }
 
-/* スマートフォン */
+/* =========================
+   Tablet Portrait
+   768px以下（iPad mini縦・小型タブレット）
+========================= */
+
 @media (max-width: 768px) {
 
+    .inner,
+    .header-inner,
+    .footer-inner {
+        width: min(720px, calc(100% - 48px));
+    }
+
+    /* Hero */
+
+    .hero {
+        height: 520px;
+        background-position: center;
+    }
+
+    .hero-copy {
+        bottom: 72px;
+        width: 94%;
+        min-height: 96px;
+        height: auto;
+        padding: 18px 56px 18px 24px;
+    }
+
+    .hero-copy h2 {
+        font-size: 26px;
+        line-height: 1.6;
+        letter-spacing: 0.08em;
+    }
+
+    /* Problem */
+
+    .problem {
+        padding: 72px 0 88px;
+    }
+
+    .problem-top {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .problem-img {
+        width: 190px;
+    }
+
+    .problem-text {
+        padding-top: 0;
+    }
+
+    .section-title {
+        margin-bottom: 32px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .problem-list {
+        font-size: 21px;
+    }
+
+    .problem-copy {
+        margin-top: 64px;
+        font-size: 24px;
+    }
+
+    .problem-copy span {
+        font-size: 26px;
+    }
+
+    .problem-btns {
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .problem-btns .btn {
+        width: min(100%, 340px);
+    }
+
+    /* Trust */
+
+    .trust {
+        padding: 64px 0 80px;
+    }
+
+    .trust-inner {
+        margin: 72px auto 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px 24px;
+    }
+
+    .trust-item-center {
+        margin-top: 0;
+    }
+
+    .trust-circle {
+        width:220px;
+        height: auto;
+        aspect-ratio: 1;
+        margin-inline: auto;
+    }
+
+    .trust-circle strong {
+        font-size: 68px;
+    }
+
+    .trust-circle span {
+        font-size: 28px;
+    }
+
+    .trust-item h3 {
+        margin-top: 18px;
+        font-size: 28px;
+    }
+
+    /* Service */
+
+    .top-service {
+        padding: 64px 0 88px;
+    }
+
+    .top-service-inner{
+        display:flex;
+        gap:24px;
+    }
+
+    .top-service-item{
+        width:30%;
+    }
+
+    .top-service-item img{
+        width:100%;
+    }
+
+    /* Reason */
+
+    .reason {
+        padding: 64px 0 88px;
+    }
+
+    .reason-inner {
+        margin-top: 64px;
+
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .reason-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .reason-item:not(:last-child) {
+        padding-bottom: 48px;
+        border-right: 0;
+        border-bottom: 1px solid #7da3d8;
+    }
+
+    .reason-item h3 {
+        width: min(100%, 300px);
+        margin-bottom: 28px;
+    }
+
+    .reason-item p {
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    /* Case Study */
+
+    .top-case {
+        padding-top: 64px;
+    }
+
+    .top-case > .case-title {
+        width: 90%;
+    }
+
+    .case-inner {
+        margin-top: 56px;
+    }
+
+    .case-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 32px;
+        margin-bottom: 72px;
+    }
+
+    /* 建設会社・飲食店ともに
+    テキストを上、画像を下に統一 */
+    .case-item .case-text {
+        order: 1;
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .case-item .case-img {
+        order: 2;
+    }
+
+    /* 緑タイトルを共通のピル型にする */
+    .case-item-construction .case-text h3,
+    .case-item-cafe .case-text h3 {
+        width: min(100%, 520px);
+        min-height: 88px;
+
+        margin: 0 auto;
+        padding: 16px 36px;
+
+        border-radius: 999px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+        text-align: left;
+    }
+
+    /* 本文もタイトルと同じ幅にそろえる */
+    .case-text p,
+    .case-item-cafe .case-text p {
+        width: min(100%, 520px);
+
+        margin: 26px auto 0;
+        padding: 0 12px;
+
+        font-size: 18px;
+        line-height: 1.9;
+        letter-spacing: 0.07em;
+        text-align: left;
+    }
+
+    /* 画像は円形を維持 */
+    .case-img {
+        width: 300px;
+        height: 300px;
+        aspect-ratio: auto;
+
+        margin-inline: auto;
+
+        border-radius: 50%;
+    }
+
+    /* 飲食店のPC用指定を解除 */
+    .case-item-cafe .case-text {
+        width: 100%;
+        align-items: center;
+    }
+
+    .case-item-cafe .case-text h3,
+    .case-item-cafe .case-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 水色の装飾 */
+    .case-item-cafe::before {
+        top: 250px;
+        left: -70px;
+
+        width: 250px;
+        height: 220px;
+    }
+
+    .arrow-title {
+        width: 90%;
+        max-width: none;
+        min-height: 82px;
+        padding: 0 70px 0 40px;
+
+        font-size: 32px;
+        line-height: 1.35;
+        letter-spacing: 0.12em;
+
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        clip-path: polygon(
+            0 0,
+            calc(100% - 32px) 0,
+            100% 50%,
+            calc(100% - 32px) 100%,
+            0 100%
+        );
+    }
+
+    .arrow-title span {
+        font-size:22px;
+        font-weight:700;
+        letter-spacing: 0.06em;
+    }
+
+    .reason-title{
+        width:95%;
+    }
+
+    .case-title{
+        width:90%;
+    }
 }
 
-/* 小さいスマートフォン */
+/* ========================================
+   Mobile
+   480px以下（スマートフォン）
+======================================== */
+
 @media (max-width: 480px) {
 
+    /* =========================
+       共通
+    ========================= */
+
+    .inner,
+    .header-inner,
+    .footer-inner {
+        width: calc(100% - 32px);
+    }
+
+        .gnav {
+        display: none;
+    }
+
+    .logo img {
+        width: auto;
+        height: 42px;
+    }
+
+    /* =========================
+       矢印タイトル
+    ========================= */
+
+    .arrow-title {
+        width: 94%;
+        max-width: none;
+        min-height: 64px;
+        padding: 10px 42px 10px 20px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-size: 20px;
+        line-height: 1.3;
+        letter-spacing: 0.08em;
+
+        clip-path: polygon(
+            0 0,
+            calc(100% - 28px) 0,
+            100% 50%,
+            calc(100% - 28px) 100%,
+            0 100%
+        );
+    }
+
+    .arrow-title span {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+    }
+
+    /* REASONは文字量が多いので2段にする */
+
+    .reason-title {
+        width: 96%;
+        min-height: 78px;
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .reason-title span {
+        display: block;
+        font-size: 12px;
+    }
+
+    /* CASE STUDYも少し広めにする */
+
+    .top-case > .case-title {
+        width: 96%;
+        min-height: 70px;
+    }
+
+    /* =========================
+       Hero
+    ========================= */
+
+    .hero {
+        height: 420px;
+        background-position: center;
+    }
+
+    .hero-copy {
+        bottom: 54px;
+        width: 96%;
+        min-height: 84px;
+        padding: 14px 46px 14px 18px;
+    }
+
+    .hero-copy h2 {
+        font-size: 20px;
+        line-height: 1.55;
+        letter-spacing: 0.06em;
+    }
+
+    /* =========================
+       Problem
+    ========================= */
+
+    .problem {
+        padding: 56px 0 72px;
+    }
+
+    .problem-top {
+        gap: 28px;
+    }
+
+    .problem-img {
+        width: 150px;
+    }
+
+    .section-title {
+        margin-bottom: 24px;
+
+        font-size: 22px;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+    }
+
+    .problem-list {
+        font-size: 17px;
+        line-height: 1.7;
+        letter-spacing: 0.06em;
+    }
+
+    .problem-list li {
+        padding-left: 28px;
+    }
+
+    .problem-list li::before {
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+
+    .problem-copy {
+        margin-top: 48px;
+
+        font-size: 19px;
+        line-height: 1.7;
+        letter-spacing: 0.08em;
+    }
+
+    .problem-copy span {
+        font-size: 21px;
+    }
+
+    .problem-btns {
+        margin-top: 36px;
+        gap: 18px;
+    }
+
+    .problem-btns .btn {
+        width: min(100%, 300px);
+    }
+
+    /* =========================
+       Trust
+    ========================= */
+
+    .trust {
+        padding: 52px 0 68px;
+    }
+
+    .trust-inner {
+        margin-top: 54px;
+
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .trust-circle {
+        width: 180px;
+    }
+
+    .trust-circle strong {
+        font-size: 54px;
+    }
+
+    .trust-circle span {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+    .trust-item h3 {
+        margin-top: 16px;
+
+        font-size: 21px;
+        letter-spacing: 0.1em;
+    }
+
+    /* =========================
+       Service
+    ========================= */
+
+    .top-service {
+        padding: 52px 0 72px;
+    }
+
+    .top-service-inner {
+        margin-top: 54px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .top-service-item {
+        width: 100%;
+    }
+
+    .top-service-item img {
+        width: min(100%, 250px);
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .top-service-item h3 {
+        font-size: 21px;
+    }
+
+    /* =========================
+       Reason
+    ========================= */
+
+    .reason {
+        padding: 52px 0 72px;
+    }
+
+    .reason-inner {
+        margin-top: 52px;
+        gap: 40px;
+    }
+
+    .reason-item:not(:last-child) {
+        padding-bottom: 40px;
+    }
+
+    .reason-item h3 {
+        width: min(100%, 280px);
+        height: 46px;
+        margin-bottom: 24px;
+
+        font-size: 19px;
+        letter-spacing: 0.12em;
+    }
+
+    .reason-item p {
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+    }
+
+    /* =========================
+       Case Study
+    ========================= */
+
+    .top-case {
+        padding-top: 52px;
+    }
+
+    .case-inner {
+        margin-top: 48px;
+    }
+
+    .case-item {
+        gap: 24px;
+        margin-bottom: 58px;
+    }
+
+    /* テキストを上、画像を下に統一 */
+
+    .case-item .case-text {
+        order: 1;
+        width: 100%;
+        align-items: center;
+    }
+
+    .case-item .case-img {
+        order: 2;
+    }
+
+    /* 緑タイトル */
+
+    .case-item-construction .case-text h3,
+    .case-item-cafe .case-text h3 {
+        width: 100%;
+        min-height: 72px;
+        margin: 0;
+        padding: 12px 24px;
+
+        border-radius: 999px;
+
+        font-size: 19px;
+        line-height: 1.45;
+        letter-spacing: 0.07em;
+        text-align: left;
+    }
+
+    /* 本文 */
+
+    .case-text p,
+    .case-item-cafe .case-text p {
+        width: 100%;
+        margin: 20px 0 0;
+        padding: 0 8px;
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.9;
+        letter-spacing: 0.05em;
+    }
+
+    /* 円形画像を維持 */
+
+    .case-img {
+        width: 240px;
+        height: 240px;
+        aspect-ratio: auto;
+
+        border-radius: 50%;
+    }
+
+    /* 水色装飾 */
+
+    .case-item-cafe::before {
+        top: 220px;
+        left: -100px;
+
+        width: 220px;
+        height: 190px;
+    }
+
+    /* CTA */
+
+    .case-cta {
+        padding: 24px 0 64px;
+    }
+
+    .case-cta p {
+        margin-bottom: 28px;
+
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .case-cta .btn {
+        width: min(100%, 260px);
+    }
 }
