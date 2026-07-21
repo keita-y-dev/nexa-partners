@@ -435,6 +435,57 @@
         grid-template-columns: 120px minmax(0, 1fr);
         column-gap: 28px;
     }
+
+    /* =========================
+    CONTACTページ
+    ========================= */
+
+    .contact-top {
+        width: min(960px, calc(100% - 48px));
+        padding: 72px 24px;
+    }
+
+    .contact-top h1 {
+        font-size: 42px;
+    }
+
+    .contact-top hr {
+        width: min(380px, 70%);
+        margin: 36px auto 48px;
+    }
+
+    .contact-top p {
+        font-size: 20px;
+    }
+
+    .contact-content {
+        width: min(960px, calc(100% - 48px));
+        padding: 60px 0 120px;
+
+        grid-template-columns: minmax(320px, 400px) minmax(0, 480px);
+        gap: 60px;
+    }
+
+    .stat-container {
+        grid-template-columns: repeat(2, 160px);
+        gap: 28px;
+    }
+
+    .stat-card {
+        width: 160px;
+        font-size: 18px;
+    }
+
+    .contact-form {
+        min-width: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        max-width: 100%;
+    }
 }
 
 /* =========================
@@ -1036,6 +1087,81 @@
 
     .message-text h3 {
         max-width: 100%;
+    }
+
+    /* =========================
+    CONTACTページ
+    ========================= */
+
+    .contact-top {
+        width: calc(100% - 48px);
+        padding: 64px 0;
+    }
+
+    .contact-top h1 {
+        font-size: 36px;
+    }
+
+    .contact-top hr {
+        width: min(320px, 75%);
+        margin: 30px auto 40px;
+    }
+
+    .contact-top p {
+        font-size: 18px;
+        line-height: 1.8;
+        letter-spacing: 0.08em;
+    }
+
+    .contact-top p + p {
+        margin-top: 20px;
+    }
+
+    .contact-content {
+        width: calc(100% - 48px);
+        padding: 48px 0 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .stat-container {
+        width: 100%;
+        max-width: 440px;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .stat-card {
+        width: 100%;
+        max-width: 180px;
+        justify-self: center;
+
+        font-size: 18px;
+    }
+
+    .contact-form {
+        width: min(100%, 560px);
+    }
+
+    .form-item {
+        margin-bottom: 18px;
+    }
+
+    .form-item > p,
+    .contact-form legend {
+        font-size: 17px;
+    }
+
+    .checkbox-list {
+        padding-left: 24px;
+    }
+
+    input[type="submit"] {
+        margin-top: 28px;
     }
 }
 
@@ -1866,5 +1992,117 @@
     .company-info ul {
         margin-top: 6px;
         padding-left: 0;
+    }
+
+    /* =========================
+    CONTACTページ
+    ========================= */
+
+    .contact-top {
+        width: calc(100% - 32px);
+        padding: 52px 0 48px;
+    }
+
+    .contact-top h1 {
+        font-size: 28px;
+        line-height: 1.4;
+        letter-spacing: 0.12em;
+    }
+
+    .contact-top hr {
+        width: min(240px, 75%);
+        margin: 24px auto 32px;
+    }
+
+    .contact-top p {
+        font-size: 16px;
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+    }
+
+    .contact-top p + p {
+        margin-top: 16px;
+    }
+
+    .contact-content {
+        width: calc(100% - 32px);
+        padding: 40px 0 80px;
+        gap: 52px;
+    }
+
+    .stat-container {
+        width: 100%;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .stat-card {
+        width: 100%;
+        max-width: 145px;
+
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-item {
+        margin-bottom: 16px;
+    }
+
+    .form-item > p,
+    .contact-form legend {
+        font-size: 16px;
+        letter-spacing: 0.07em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        height: 46px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+
+        font-size: 16px;
+    }
+
+    textarea {
+        min-height: 140px;
+    }
+
+    .checkbox-list {
+        padding-left: 0;
+        gap: 8px;
+    }
+
+    .checkbox-list label {
+        gap: 8px;
+
+        font-size: 15px;
+        letter-spacing: 0.05em;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+
+    input[type="submit"] {
+        width: min(100%, 220px);
+        height: 50px;
+        margin: 28px auto 0;
+
+        font-size: 16px;
     }
 }
