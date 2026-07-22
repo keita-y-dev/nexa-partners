@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* =========================
+   CONFIRMページ
+========================= */
+
+main{
+    background:#f4f9fc;
+}
+
+/* =========================
+   上部
+========================= */
+
+.confirm-top{
+    max-width:1200px;
+    margin:0 auto;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.confirm-top h1{
+    font-size:48px;
+    font-weight:700;
+    letter-spacing:.18em;
+}
+
+.confirm-top hr{
+    width:420px;
+    margin:42px auto 60px;
+    border:0;
+    border-top:2px solid #333;
+}
+
+.confirm-top p{
+    font-size:22px;
+    line-height:1.9;
+    letter-spacing:.12em;
+}
+
+.confirm-top p+p{
+    margin-top:20px;
+}
+
+/* =========================
+   内容
+========================= */
+
+.confirm-content{
+    width:min(900px, calc(100% - 40px));
+    margin:0 auto;
+    padding:0 0 120px;
+}
+
+/* =========================
+   一覧
+========================= */
+
+.confirm-list{
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+
+.confirm-list dt,
+.confirm-list dd{
+    padding:28px 36px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.confirm-list dt{
+    background:#f8fbff;
+    color:#0f2f75;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:.08em;
+}
+
+.confirm-list dd{
+    font-size:17px;
+    line-height:1.9;
+    letter-spacing:.05em;
+}
+
+.confirm-list dt:last-of-type,
+.confirm-list dd:last-of-type{
+    border-bottom:none;
+}
+
+.confirm-list input[type="hidden"]{
+    display:none;
+}
+
+/* =========================
+   ボタン
+========================= */
+
+.confirm-button{
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+    gap:28px;
+}
+
+.confirm-button button,
+.confirm-button input[type="submit"]{
+
+    min-width:240px;
+    height:58px;
+
+    border-radius:999px;
+
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:.08em;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+/* 修正 */
+
+.confirm-button button{
+    background:#fff;
+    border:2px solid #3367d6;
+    color:#3367d6;
+}
+
+.confirm-button button:hover{
+    background:#3367d6;
+    color:#fff;
+}
+
+/* 送信 */
+
+.confirm-button input[type="submit"]{
+    border:none;
+    background:#3367d6;
+    color:#fff;
+}
+
+.confirm-button input[type="submit"]:hover{
+    background:#0f2f75;
+}

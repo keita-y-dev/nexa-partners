@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* =========================
+   THANKSページ
+========================= */
+
+main{
+    background:#f4f9fc;
+}
+
+.thanks-top{
+    max-width:900px;
+    margin:0 auto;
+    padding:120px 20px;
+    text-align:center;
+}
+
+.thanks-top img{
+    width:120px;
+    margin-bottom:40px;
+}
+
+.thanks-top h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:.12em;
+    color:#0f2f75;
+}
+
+.thanks-top hr{
+    width:420px;
+    margin:40px auto 56px;
+    border:0;
+    border-top:2px solid #333;
+}
+
+.thanks-top p{
+    font-size:20px;
+    line-height:2;
+    letter-spacing:.08em;
+}
+
+.thanks-top p+p{
+    margin-top:12px;
+}
+
+.thanks-top .home-btn{
+    display:inline-block;
+    margin-top:56px;
+    padding:18px 60px;
+
+    background:#3367d6;
+    color:#fff;
+
+    border-radius:999px;
+
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:.08em;
+
+    transition:.3s;
+}
+
+.thanks-top .home-btn:hover{
+    background:#0f2f75;
+}

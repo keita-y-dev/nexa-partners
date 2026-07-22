@@ -123,7 +123,9 @@
                 </dl>
 
                 <div class="confirm-button">
-                    <button>入力内容を修正する</button>
+                    <button type="button" onclick="history.back()">
+                        入力内容を修正する
+                    </button>
                     <input type="submit" value="送信する">
                 </div>
             </form>
