@@ -115,7 +115,7 @@ $adminHeaders .= "Reply-To: {$email}\r\n";
 $adminHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 
-if (mb_send_mail(
+if (!mb_send_mail(
     $adminMail,
     $adminSubject,
     $body,
