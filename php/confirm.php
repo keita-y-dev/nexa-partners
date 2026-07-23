@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/confirm.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/confirm.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -17,16 +17,16 @@
     <header>
         <div class="header-inner">
             <h1 class="logo">
-            <a href="index.html">
+            <a href="../index.html">
                 <img src="images/common/logo.svg" alt="NEXA Partners">
             </a>
             </h1>
             <nav>
             <ul class="gnav">
-                <li><a href="service.html">SERVICE</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="case.html">CASE</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="../service.html">SERVICE</a></li>
+                <li><a href="../about.html">ABOUT</a></li>
+                <li><a href="../case.html">CASE</a></li>
+                <li><a href="../contact.html">CONTACT</a></li>
             </ul>
             </nav>
         </div>
@@ -126,7 +126,7 @@
                     <button type="button" onclick="history.back()">
                         入力内容を修正する
                     </button>
-                    <input type="submit" value="送信する">
+                    <button type="submit">送信する</button>
                 </div>
             </form>
         </section>

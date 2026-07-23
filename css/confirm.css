@@ -104,11 +104,13 @@ main{
     gap:28px;
 }
 
-.confirm-button button,
-.confirm-button input[type="submit"]{
-
-    min-width:240px;
+.confirm-button button{
+    width:240px;
     height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     border-radius:999px;
 
@@ -118,29 +120,27 @@ main{
 
     cursor:pointer;
     transition:.3s;
+
+    padding:0;
 }
 
-/* 修正 */
-
-.confirm-button button{
+.confirm-button button[type="button"]{
     background:#fff;
     border:2px solid #3367d6;
     color:#3367d6;
 }
 
-.confirm-button button:hover{
+.confirm-button button[type="button"]:hover{
     background:#3367d6;
     color:#fff;
 }
 
-/* 送信 */
-
-.confirm-button input[type="submit"]{
+.confirm-button button[type="submit"]{
+    background:#3367d6;
     border:none;
-    background:#3367d6;
     color:#fff;
 }
 
-.confirm-button input[type="submit"]:hover{
+.confirm-button button[type="submit"]:hover{
     background:#0f2f75;
 }
