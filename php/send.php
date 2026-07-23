@@ -105,6 +105,11 @@ mb_internal_encoding("UTF-8");
 // 管理者宛メール
 // =====================
 
+// ポートフォリオ公開用のため、メール送信処理はコメントアウトしています。
+// 実運用時はコメントを外すことで送信可能です。
+
+/*
+
 $adminMail = "info@nexa-partners.com";
 
 $adminSubject = "お問い合わせがありました";
@@ -124,7 +129,7 @@ if (!mb_send_mail(
     exit('メール送信に失敗しました');
 }
 
-
+*/
 
 // =====================
 // お客様宛 自動返信メール
@@ -173,7 +178,7 @@ $userHeaders  = "From: NEXA Partners <info@nexa-partners.com>\r\n";
 $userHeaders .= "Reply-To: info@nexa-partners.com\r\n";
 $userHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-
+/*
 
 if (!mb_send_mail(
     $email,
@@ -184,13 +189,13 @@ if (!mb_send_mail(
     exit('メール送信に失敗しました');
 }
 
-
+*/
 
 // =====================
 // 完了ページへ
 // =====================
 
-header('Location: thanks.html');
+header('Location: ../thanks.html');
 exit;
 
 ?>
