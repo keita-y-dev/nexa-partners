@@ -43,11 +43,11 @@ Hero
 
 .problem {
   background: #f4f9fc;
-  padding: 100px 0 120px;
+  padding: 130px 0 160px;
 }
 
 .problem-inner {
-  width: 1200px;
+  width: min(1280px, calc(100% - 80px));
   margin: 0 auto;
 }
 
@@ -131,13 +131,13 @@ Hero
 
 .trust {
   background: #f4f9fc;
-  padding: 80px 0 110px;
+  padding: 120px 0 150px;
 }
 
 /* 実績3つ */
 .trust-inner {
-  width: 1080px;
-  margin: 160px auto 30px;
+  width: min(1240px, calc(100% - 80px));
+  margin: 170px auto 40px;
 
   display: flex;
   justify-content: space-between;
@@ -195,12 +195,12 @@ Hero
 
 .top-service {
   background: #f4f9fc;
-  padding: 80px 0 120px;
+  padding: 160px 0 160px;
 }
 
 .top-service-inner {
-  width: 1120px;
-  margin: 120px auto 0;
+  width: min(1360px, calc(100% - 80px));
+  margin: 130px auto 0;
 
   display: flex;
   justify-content: space-between;
@@ -208,13 +208,14 @@ Hero
 }
 
 .top-service-item {
-  width: 300px;
+  width: min(31%, 380px);
   text-align: center;
 }
 
 .top-service-item img {
-  width: 300px;
-  height: 210px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 10 / 7;
   object-fit: contain;
   margin: 0 auto 40px;
 }
@@ -226,27 +227,22 @@ Hero
   letter-spacing: 0.14em;
 }
 
-/* 中央だけ青文字にする場合 */
-.top-service-item:nth-child(2) h3 {
-  color: #0f2f75;
-}
-
 /* =========================
    Reason
 ========================= */
 
 .reason {
   background: #f4f9fc;
-  padding: 80px 0 120px;
+  padding: 120px 0 160px;
 }
 
 .reason-title {
-  width: 1050px;
+  width: min(1180px, calc(100% - 80px));
 }
 
 .reason-inner {
-  width: 1160px;
-  margin: 90px auto 0;
+  width: min(1360px, calc(100% - 80px));
+  margin: 110px auto 0;
 
   display: flex;
   justify-content: space-between;
@@ -292,41 +288,41 @@ Hero
 
 .top-case {
     position: relative;
-    padding: 70px 0 0;
+    padding: 120px 0 20px;
     background-color: #f4f9fc;
 }
 
 /* セクションタイトル */
 .top-case > .case-title {
-    width: 640px;
+    width: min(760px, 62vw);
 }
 
 /* 事例全体 */
 .case-inner {
-    width: 1000px;
-    margin: 55px auto 0;
+    width: min(1380px, calc(100% - 80px));
+    margin: 100px auto 0;
 }
 
 /* 事例1件 */
 .case-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 75px;
+    gap: clamp(80px, 9vw, 180px);
 
-    margin-bottom: 60px;
+    margin-bottom: 140px;
 }
 
 /* 説明ブロック */
 .case-text {
-    width: 430px;
+    width: min(48%, 560px);
     flex-shrink: 0;
 }
 
 /* 緑の見出し */
 .case-text h3 {
-    width: 420px;
-    min-height: 82px;
+    width: 100%;
+    min-height: 104px;
     padding: 14px 42px;
 
     display: flex;
@@ -340,7 +336,7 @@ Hero
     );
     color: #fff;
 
-    font-size: 23px;
+    font-size: 27px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.12em;
@@ -348,12 +344,12 @@ Hero
 
 /* 説明文 */
 .case-text p {
-    width: 420px;
-    margin-top: 28px;
+    width: 100%;
+    margin-top: 38px;
     padding-inline: 20px;
 
     color: #111;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.1em;
@@ -361,8 +357,9 @@ Hero
 
 /* 画像 */
 .case-img {
-    width: 310px;
-    height: 310px;
+    width: clamp(360px, 27vw, 460px);
+    height: auto;
+    aspect-ratio: 1;
     flex-shrink: 0;
 
     overflow: hidden;
@@ -397,7 +394,7 @@ Hero
 }
 
 .case-item-cafe .case-text {
-    width: 430px;
+    width: min(48%, 560px);
 
     display: flex;
     flex-direction: column;
@@ -405,15 +402,15 @@ Hero
 }
 
 .case-item-cafe .case-text h3 {
-    width: 420px;
+    width: 100%;
     margin: 0;
 
     border-radius: 999px 0 0 999px;
 }
 
 .case-item-cafe .case-text p {
-    width: 420px;
-    margin-top: 28px;
+    width: 100%;
+    margin-top: 38px;
     padding-inline: 20px;
 }
 
@@ -423,11 +420,11 @@ Hero
     position: absolute;
     z-index: 0;
 
-    top: -45px;
-    left: -100px;
+    top: -60px;
+    left: -120px;
 
-    width: 360px;
-    height: 260px;
+    width: 430px;
+    height: 315px;
 
     border-radius:
         45% 55% 50% 50% /
@@ -447,7 +444,7 @@ Hero
 ========================= */
 
 .case-cta {
-    padding: 55px 0 75px;
+    padding: 80px 0 100px;
     text-align: center;
 }
 
@@ -463,5 +460,5 @@ Hero
 .case-cta .btn {
     width: 280px;
     height: 62px;
-    font-size: 18px;
+    font-size: 20px;
 }

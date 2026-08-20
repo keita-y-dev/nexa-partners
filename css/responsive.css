@@ -1,6 +1,92 @@
 @charset "utf-8";
 
 /* =========================
+   Wide Desktop
+   1920px以上（大型モニター）
+========================= */
+
+@media (min-width: 1920px) {
+
+    /* =========================
+    ABOUTページ
+    ========================= */
+
+    /* ABOUT HERO：画面の高さいっぱいに表示（ヘッダー分を差し引く） */
+    .about-hero {
+        min-height: calc(100vh - 90px);
+    }
+
+    /* VALUE：カードを大きくし、縦方向に流れるよう再配置 */
+    .value {
+        padding: 160px 60px 160px;
+    }
+
+    .value-list {
+        height: 1300px;
+        margin-top: 60px;
+    }
+
+    .value-item {
+        width: 440px;
+        height: 440px;
+        padding: 80px 55px 50px;
+    }
+
+    .value-item img {
+        width: 260px;
+        height: 240px;
+    }
+
+    .value-item figcaption {
+        font-size: 34px;
+    }
+
+    .value-item p {
+        font-size: 17px;
+    }
+
+    .partner {
+        top: 20px;
+        left: 100px;
+    }
+
+    .simple {
+        top: 340px;
+        right: 60px;
+    }
+
+    .support {
+        top: 780px;
+        left: 360px;
+    }
+
+    /* MESSAGE：左右の余白を狭め、横幅を広く使う */
+    .message {
+        max-width: 1680px;
+        padding: 140px 40px 180px;
+    }
+
+    .message > h2 {
+        font-size: 74px;
+    }
+
+    /* COMPANY：左右の余白を狭め、横幅を広く使う */
+    .company {
+        max-width: 1300px;
+        padding: 110px 20px 160px;
+    }
+
+    .company-top {
+        font-size: 38px;
+    }
+
+    .company-info {
+        grid-template-columns: 160px 460px;
+        column-gap: 60px;
+    }
+}
+
+/* =========================
    Tablet
    1024px以下（iPad Air横・小型ノートPC）
 ========================= */
@@ -2388,7 +2474,7 @@
     }
 }
 /* =========================
-   Hamburger
+   Hamburger / Scroll
    768px以下
 ========================= */
 @media (max-width: 768px) {
@@ -2402,11 +2488,13 @@
         width: calc(100% - 40px);
     }
 
-    .site-header {
+    .site-header,
+    .site-header.is-scrolled {
         height: 72px;
     }
 
-    .site-header .logo img {
+    .site-header .logo img,
+    .site-header.is-scrolled .logo img {
         width: 115px;
         height: auto;
     }
@@ -2535,7 +2623,8 @@
 
 /* Logo spacing adjustment: small smartphones */
 @media (max-width: 480px) {
-    .site-header .logo img {
+    .site-header .logo img,
+    .site-header.is-scrolled .logo img {
         width: 105px;
         height: auto;
     }
