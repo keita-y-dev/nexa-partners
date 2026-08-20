@@ -15,8 +15,8 @@
 
     /* Header */
     .logo img {
-        height: 46px;
-        width: auto;
+        width: 125px;
+        height: auto;
     }
 
     .gnav {
@@ -1339,7 +1339,7 @@
 
         .logo img {
         width: auto;
-        height: 42px;
+        height: 40px;
     }
 
     /* =========================
@@ -2388,7 +2388,7 @@
     }
 }
 /* =========================
-   Hamburger / Scroll
+   Hamburger
    768px以下
 ========================= */
 @media (max-width: 768px) {
@@ -2402,15 +2402,13 @@
         width: calc(100% - 40px);
     }
 
-    .site-header,
-    .site-header.is-scrolled {
+    .site-header {
         height: 72px;
     }
 
-    .site-header .logo img,
-    .site-header.is-scrolled .logo img {
-        height: 42px;
-        width: auto;
+    .site-header .logo img {
+        width: 115px;
+        height: auto;
     }
 
     .menu-toggle {
@@ -2531,5 +2529,14 @@
     .global-nav,
     .menu-toggle span {
         transition: none;
+    }
+}
+
+
+/* Logo spacing adjustment: small smartphones */
+@media (max-width: 480px) {
+    .site-header .logo img {
+        width: 105px;
+        height: auto;
     }
 }

@@ -17,7 +17,7 @@ $title = $title ?? 'NEXA Partners';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="<?= $base ?>images/common/favicon.ico">
     <title><?= htmlspecialchars($title, ENT_QUOTES, 'UTF-8') ?></title>
+    <link rel="icon" href="<?= $base ?>images/common/nexa-favicon.svg" type="image/svg+xml">
 </head>
 <body>

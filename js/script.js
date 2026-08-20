@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.site-header');
     const menuToggle = document.querySelector('.menu-toggle');
     const globalNav = document.querySelector('.global-nav');
-
-    // ヘッダーをスクロールに連動させる
-    const updateHeader = () => {
-        header?.classList.toggle('is-scrolled', window.scrollY > 20);
-    };
-
-    updateHeader();
-    window.addEventListener('scroll', updateHeader, { passive: true });
 
     // ハンバーガーメニュー
     if (menuToggle && globalNav) {

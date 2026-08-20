@@ -2,7 +2,7 @@
 <footer>
     <div class="footer-inner">
         <div class="footer-left">
-            <img src="<?= $base ?>images/common/logo_white.svg" alt="NEXA Partners">
+            <img src="<?= $base ?>images/common/nexa-logo-white.svg" alt="NEXA Partners">
             <p>
                 NEXA Partners株式会社<br>
                 鹿児島県鹿児島市○○町1-23

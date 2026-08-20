@@ -6,7 +6,7 @@ $current = basename($_SERVER['SCRIPT_NAME']);
     <div class="header-inner">
         <h1 class="logo">
             <a href="<?= $base ?>index.php">
-                <img src="<?= $base ?>images/common/logo.svg" alt="NEXA Partners">
+                <img src="<?= $base ?>images/common/nexa-logo.svg" alt="NEXA Partners">
             </a>
         </h1>
 

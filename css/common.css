@@ -61,7 +61,9 @@ header{
 }
 
 .logo img{
-    height:55px;
+    display:block;
+    width:130px;
+    height:auto;
 }
 
 .gnav{
@@ -144,7 +146,9 @@ footer{
 }
 
 .footer-left img{
-    width:180px;
+    display:block;
+    width:170px;
+    height:auto;
     margin-bottom:20px;
 }
 
@@ -177,19 +181,6 @@ Scroll animation
 .js-reveal.is-visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.site-header {
-    transition: height .3s ease, box-shadow .3s ease, background-color .3s ease;
-}
-
-.site-header.is-scrolled {
-    height: 70px;
-    box-shadow: 0 4px 18px rgba(0,0,0,.12);
-}
-
-.site-header.is-scrolled .logo img {
-    height: 44px;
 }
 
 .gnav a {
