@@ -2,7 +2,7 @@
 
 // POST以外からのアクセスを防止
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: contact.html');
+    header('Location: ../contact.php');
     exit;
 }
 
@@ -195,7 +195,7 @@ if (!mb_send_mail(
 // 完了ページへ
 // =====================
 
-header('Location: ../thanks.html');
+header('Location: ../thanks.php');
 exit;
 
 ?>

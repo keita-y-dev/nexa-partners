@@ -165,3 +165,55 @@ footer{
     font-size:14px;
     color:#9ca3af;
 }
+/* =====================
+Scroll animation
+===================== */
+.js-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.js-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.site-header {
+    transition: height .3s ease, box-shadow .3s ease, background-color .3s ease;
+}
+
+.site-header.is-scrolled {
+    height: 70px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.12);
+}
+
+.site-header.is-scrolled .logo img {
+    height: 44px;
+}
+
+.gnav a {
+    position: relative;
+}
+
+.gnav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: #2563eb;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .25s ease;
+}
+
+.gnav a:hover::after,
+.gnav a.is-current::after {
+    transform: scaleX(1);
+}
+
+.menu-toggle {
+    display: none;
+}

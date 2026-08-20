@@ -16,8 +16,10 @@ main{
 }
 
 .thanks-top img{
-    width:120px;
-    margin-bottom:40px;
+    display:block;
+    width:160px;
+    height:auto;
+    margin:0 auto 40px;
 }
 
 .thanks-top h1{
