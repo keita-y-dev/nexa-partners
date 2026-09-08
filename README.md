@@ -1,27 +1,25 @@
 # NEXA Partners
 
-地方企業向けDX支援会社を想定した架空のコーポレートサイトです。
+ITに詳しくない中小企業にもサービス内容が伝わることを意識して制作した、架空のコーポレートサイトです。
 
-## 制作目的
-就職活動用ポートフォリオ作品
-
-## 担当範囲
+## 制作内容
 - 企画
-- ロゴ制作
-- デザインカンプ
-- HTML/CSSコーディング
-- Git/GitHubによるバージョン管理
+- デザイン
+- コーディング
+- レスポンシブ対応
 
 ## 使用技術
 - HTML
 - CSS
 - JavaScript
+- PHP
 - Figma
-- Photoshop / Illustrator
+- Canva
 
-## ページ
-- TOP
-- SERVICE
-- ABOUT
-- CASE STUDY
-- CONTACT
+## 主な実装
+- 複数ページ構成
+- レスポンシブ対応
+- 問い合わせフォーム
+
+## Portfolio
+https://keita-y.com/
