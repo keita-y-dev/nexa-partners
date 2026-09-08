@@ -22,4 +22,4 @@ ITに詳しくない中小企業にもサービス内容が伝わることを意
 - 問い合わせフォーム
 
 ## Portfolio
-https://keita-y.com/
+https://keita-y.com/sites/nexa/
